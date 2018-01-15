@@ -1,0 +1,13 @@
+h1{
+    text-align: center; 
+}
+#cartTotal{
+    float:right;    
+}
+ul
+{
+    list-style-type: none;
+}
+input[type=button]{
+    float:right;
+}

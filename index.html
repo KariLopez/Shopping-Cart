@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script type= "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="list.js"></script>
 </head>
-<header>
-
-</header>
-<body> 
-    <h2>Items Available to Purchase</h2>
-     <!--Table from javascript will go here-->
-    <avail-items></avail-items>
-    <shopping-cart>Your Shopping cart</shopping-cart>
+<header></header>
+<body onLoad="zeroListener(),oneListener(),twoListener(),threeListener();">     
+    <div id="welcome">
+		<h1>Welcome to Karina's Boutique</h1>
+    </div>
+     
+	<div id="listForSale">
+		<h3>Items for sale:</h3>
+		<ul>
+            <!--Lists of shopping items from javascript will go here-->
+			<script> printList(); </script>
+		</ul>
+    </div>
+	<div id ="listToBuy">
+		<h3>Items in your cart:</h3>
+		<ul id="cartItems">
+        </ul>
+        <p id="cartTotal">Your cart total is: $</p>
+        <script> getTotal(); </script>
+    </div>
 </body>
-<script type="text/javascript" src="list.js"></script>
 </html>
